@@ -44,8 +44,8 @@
 }
 
 .active:hover{
-    color: chocolate;
-    border-bottom: 3px solid rgb(244, 115, 69);
+    color:#453cff;
+    border-bottom: 3px solid #453cff;
 }
 
 .hire{
@@ -66,7 +66,7 @@
 }
 
 .hire:hover{
-    border: 3px  solid rgb(244, 115, 69);
+    border: 3px  solid rgba( 69, 60, 255, 1);
 }
 @media (max-width: 576px){
     .navbar{
@@ -115,17 +115,46 @@
     width: 100vw;
     height: 75vh;
     display: flex;
-    justify-content: space-around;
+   justify-content: space-evenly;
     align-items: center;
-
+    position: relative;
     
 }
 
-.circle{
-    width: 200px;
-    height: 200px;
-    border:2px solid black;
+.exp{
+    
+    background-color: white;
+    border-radius:20px;
+    font-size: 20px;
+    padding: 2%;
+    position: absolute;
+    margin-left: 74vw;
+    margin-top: 22vh;
+    .num{
+        color: #635bff;
+        font-weight: 700;
+        font-size: 30px;
+    }
+}
+
+.right-hero{
+    background-color: #ebe9ff;
     border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    align-content: center;
+}
+
+.circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 80px;
+    color: white;
+    background-color: #635bff;
 }
 .heading{
     flex-direction: row;
@@ -137,7 +166,7 @@
     color: #453cff;
 }
 .career{
-    color: #635bff;
+    color: #453cff;
     font-weight: 600;
     font-size: 20px;
 }
@@ -157,12 +186,28 @@
 }
 .btn{
     display: block;
-    width: 115px;
+    width: 150px;
     height: 45px;
     text-align: center;
     align-content: center;
-    border:2px solid black;
     border-radius: 10px;
     text-decoration: none;
+    background-color: #635bff;
+    color: white;
+    font-weight: 600;
    
+}
+.contact{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.social{
+    display: flex;
+    gap: 1rem;
+    a{
+        text-decoration: none;
+    color: #687086;
+    }
 }
