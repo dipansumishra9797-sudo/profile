@@ -211,3 +211,75 @@
     color: #687086;
     }
 }
+
+@media (width: 768px){
+
+    
+    .career{
+        font-size: 0.75rem;
+    }
+    .heading{
+        h1{
+             font-size: 3rem;
+        }
+       
+    }
+    .left-hero{
+        .intro{
+            font-size: 1rem;
+        }
+      
+    }
+    .circle{
+        height: 150px;
+        width: 150px;
+        font-size: 60px;
+    }
+    .right-hero{
+        height: 200px;
+        width: 200px;
+    }
+    .exp{
+        
+            font-size: .80rem;
+    
+    }
+}
+
+@media (max-width: 576px){
+    .hero{
+        height: 56vh;
+        width: 100vw;
+    }
+
+    
+    .career{
+        font-size: 0.65rem;
+    }
+    .heading{
+        h1{
+             font-size: 2rem;
+        }
+       
+    }
+    .left-hero{
+        .intro{
+            font-size: 0.75rem;
+        }
+      
+    }
+    .circle{
+        height: 70px;
+        width: 70px;
+        font-size: 30px;
+    }
+    .right-hero{
+        height: 90px;
+        width: 90px;
+    }
+    .exp{
+        
+            font-size: .50rem;
+    
+    }
+}
