@@ -10,14 +10,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 95vw;
     padding: 0  3%;
     border-bottom: 1px solid #e8eaf0;
     box-shadow: 0px 0px 10px rgb(86, 86, 86);
+    
     h2{
         font-size: 30px;
     }
 
 }
+
 .name{
     display: flex;
     align-items: center;
@@ -118,6 +124,7 @@
    justify-content: space-evenly;
     align-items: center;
     position: relative;
+    margin-top: 90px;
     
 }
 
@@ -174,6 +181,7 @@
 .left-hero{
     flex-direction: column;
     display: flex;
+    padding-top: 40px;
     gap: 2rem;
     .intro{
         font-size: 20px;
@@ -282,4 +290,69 @@
             font-size: .50rem;
     
     }
+}
+
+.stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #172033;
+    width: 100vw;
+    height: 16vh;
+}
+
+.stat1{
+    border: 1px solid #ffffff18;
+    height: 16vh;
+    width: 17vw;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.stat-cont1{
+    font-size: 32px;
+}
+.stat-cont2{
+    font-size: 16px;
+}
+
+#about{
+    width: 100vw;
+    height: 60vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f7f8fc;
+   position: relative;
+}
+
+.aboutpara{
+    flex-direction: column;
+    display: flex;
+    gap: 3rem;
+    margin-right: 400px;
+    
+}
+
+h2{
+    font-size: 45px;
+}
+
+.bio{
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    width: 30vw;
+    margin-top: 170px;
+    margin-left: 800px;
+    position: absolute;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom:1px solid #e5e7ee ;
 }
