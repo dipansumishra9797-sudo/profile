@@ -41,6 +41,7 @@
 .controls{
     display: flex;
     gap: 2rem;
+    transition: 5s e;
     a{
       color: #687086;
       font-size: 20px;
@@ -119,12 +120,12 @@
 .hero{
     background-color: rgb(248, 246, 246);
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     display: flex;
    justify-content: space-evenly;
     align-items: center;
     position: relative;
-    margin-top: 90px;
+    
     
 }
 
@@ -319,7 +320,7 @@
 
 #about{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
@@ -333,6 +334,7 @@
     display: flex;
     gap: 3rem;
     margin-right: 400px;
+    margin-top: 100px;
     
 }
 
@@ -355,4 +357,68 @@ h2{
     justify-content: space-between;
     padding: 10px;
     border-bottom:1px solid #e5e7ee ;
+}
+
+#skills{
+    flex-direction: column;
+    display: flex;
+    gap: 3rem;
+    width: 100vw;
+    height: 70vh;
+}
+.aboutskill{
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+     margin-left: 170px;
+     padding-top: 100px;
+    justify-content: space-evenly;
+   
+}
+
+.data{
+    height: 7px;
+    width: 40vw;
+    
+    border-radius: 10px;
+    background-color: #dedfe3;
+}
+.data-fill{
+    width: 95%;
+    height: 100%;
+    background-color: #453cff;
+    border-radius: 10px;
+}
+.percent{
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+    margin-left: 170px;
+}
+.per-cont{
+    width: 40vw;
+    margin-bottom: 40px;
+}
+.per-para{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.java{
+    width: 85%;
+}
+.node{
+    width: 82%;
+}
+.css{
+    width: 95%;
+}
+.react{
+    width: 88%;
+}
+.aws{
+    width: 75%;
+}
+html{
+    scroll-behavior: smooth;
 }
