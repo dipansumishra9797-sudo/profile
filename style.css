@@ -124,10 +124,39 @@
     width: 100vw;
     height: 85vh;
     display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
     align-items: center;
+    gap: 50px;
     position: relative;
-    
+}
+
+
+.ball{
+    right: 91%;
+    bottom: 75%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #635bff;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    animation-name: drop;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+@keyframes drop {
+    from{
+        bottom: 75%;
+
+    }
+    to{
+        bottom: 0%;
+    }
     
 }
 
@@ -154,6 +183,13 @@
     height: 400px;
     justify-items: center;
     align-content: center;
+    
+}
+.title{
+    position: absolute;
+    margin-left: 680px;
+    color: white;
+    font-size: 92px;
 }
 
 .circle{
@@ -164,7 +200,21 @@
     align-content: center;
     font-size: 80px;
     color: white;
-    background-color: #635bff;
+    background: linear-gradient(60deg,rgb(0, 45, 113),rgb(97, 147, 246),rgb(216, 224, 244));
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+@keyframes anime {
+    from{
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
 }
 .heading{
     flex-direction: row;
@@ -296,14 +346,53 @@
 }
 
 .stat{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #172033;
     width: 100vw;
     height: 16vh;
+    z-index: 2;
 }
+.conf{
+    text-align: center;
+    height: 50px;
+    padding: 5px;
+    color: rgb(249, 203, 117);
+    font-size: 20px;
+    background-color: rgb(245, 109, 97);
+    z-index: 1;
+    fill-opacity: 80%;
+    position: absolute;
+    right: 100%;
+    animation: straight 6s linear infinite 1.5s;
+}
+@keyframes chalo {
+    from{
 
+    }
+    to{
+        right: 0%;
+    }
+}
+.plane2{
+    right: 100%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    fill-opacity: 80%;
+    animation: straight 6s linear infinite 1s;
+}
+@keyframes straight {
+    from{
+
+    }
+    to{
+        right: 0%;
+    }
+}
 .stat1{
     border: 1px solid #ffffff18;
     height: 16vh;
@@ -311,13 +400,16 @@
     text-align: center;
     align-content: center;
     color: white;
+      z-index: 2;
 }
 
 .stat-cont1{
     font-size: 32px;
+      z-index: 2;
 }
 .stat-cont2{
     font-size: 16px;
+      z-index: 2;
 }
 
 #about{
@@ -367,9 +459,12 @@ h2{
     gap: 3rem;
     width: 100vw;
     height: 70vh;
+    position: relative;
+   
 }
 .aboutskill{
     flex-direction: column;
+     z-index: 2;
     display: flex;
     gap: 30px;
      margin-left: 170px;
@@ -377,48 +472,86 @@ h2{
     justify-content: space-evenly;
    
 }
+.plane{
+    position: absolute;
+    z-index: 1;
+    height :119px;
+    width: 130px;
+    right: 100%;
+    bottom: 10%;
+    animation: movement 4s linear infinite 1s, rotate 3s linear infinite 1s;
+     
+}
+@keyframes movement {
+   from{
+    right: 100%;
+   }
+   to{
+    right: 0%;
+   } 
+}
+
+@keyframes rotate {
+    0%{
+
+    }
+   50%{
+      transform: rotate(45deg) translateY(-400px);
+   }
+    
+}
 
 .data{
     height: 7px;
     width: 40vw;
-    
+    z-index: 2;
     border-radius: 10px;
     background-color: #dedfe3;
 }
 .data-fill{
+    z-index: 2;
     width: 95%;
     height: 100%;
     background-color: #453cff;
     border-radius: 10px;
 }
 .percent{
+     z-index: 2;
     flex-direction: row;
     display: flex;
     gap: 40px;
     margin-left: 170px;
 }
 .per-cont{
+    z-index: 2;
     width: 40vw;
     margin-bottom: 40px;
 }
 .per-para{
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
 }
 .java{
+    z-index: 2;
     width: 85%;
 }
 .node{
+    z-index: 2;
     width: 82%;
 }
 .css{
+    z-index: 2;
     width: 95%;
 }
 .react{
+    z-index: 2;
     width: 88%;
 }
+
 .aws{
+    z-index: 2;
     width: 75%;
 }
 html{
